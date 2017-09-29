@@ -1,0 +1,40 @@
+```
+import numpy as np
+import matplotlib.pyplot as pl
+end_time=10
+v1=[0]
+t1=[0]
+v2=[0]
+t2=[0]
+v3=[0]
+t3=[0]
+g=9.8
+det_t1=0.5
+det_t2=0.2
+det_t3=0.1
+for i in range(int(end_time/det_t1)):
+    t1.append(t1[i]+det_t1)
+    v1.append(v1[i]+g*det_t1)
+    print(t1[-1],v1[-1])
+for i in range(int(end_time/det_t2)):
+    t2.append(t2[i]+det_t2)
+    v2.append(v2[i]+g*det_t2)
+    print(t2[-1],v2[-1])
+for i in range(int(end_time/det_t3)):
+    t3.append(t3[i]+det_t3)
+    v3.append(v3[i]+g*det_t3)
+    print(t1[-1],v1[-1])
+t=[i for i in range(int(10/0.02))]
+v=[i*g for i in range(int(10/0.02))]
+pl.plot(t1,v1,'bs')
+pl.plot(t2,v2,'r*')
+pl.plot(t3,v3,'yp')
+pl.plot(t,v,'k')
+pl.title('plot of v vs. t')
+pl.xlabel('t(s)')
+pl.ylabel('v(m/s)')
+pl.xlim(0.0,11.0)
+pl.ylim(0.0,100.0)
+pl.legend()
+pl.show
+```    
