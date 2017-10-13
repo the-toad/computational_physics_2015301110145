@@ -1,0 +1,35 @@
+```velocity=700
+x_array3=[0]
+y_array3=[0]
+z_array3=[0]
+angle_z3=60
+angle_x3=0
+spin_velocity=2*math.pi/(3600*24)
+velocity_x=velocity*math.cos(math.radians(angle_z3))*math.cos(math.radians(angle_x3))
+velocity_y=velocity*math.cos(math.radians(angle_z3))*math.sin(math.radians(angle_x3))
+velocity_z=velocity*math.sin(math.radians(angle_z3))
+det_t=0.2
+z=0
+x=0
+y=0
+t=0
+friction_0=4*10**(-5)
+while z>=0:
+    t=t+det_t
+    x=x+velocity_x*det_t
+    y=y+velocity_y*det_t
+    z=z+velocity_z*det_t
+    x_array3.append(x)
+    y_array3.append(y)
+    z_array3.append(z)
+    friction=friction_0*((1-y*6.5*10**(-3)/300)**2.5)
+    velocity_x=velocity_x+(2*spin_velocity*velocity_y*math.sin(math.radians(30))-friction*velocity*velocity_x)*det_t
+    velocity_y=velocity_y+(-2*spin_velocity*velocity_z*math.cos(math.radians(30))-2*spin_velocity*velocity_x*math.sin(math.radians(30))-friction*velocity*velocity_y)*det_t
+    velocity_z=velocity_z+(2*spin_velocity*velocity_y*math.cos(math.radians(30))-9.8-friction*velocity*velocity_z)*det_t
+    velocity=(velocity_x**2+velocity_y**2+velocity_z**2)**(1/2)
+else:
+    lanch_x=(-z_array3[-1]/(z_array3[-2]-z_array3[-1]))*(x_array3[-2]-x_array3[-1])+x_array3[-1]
+    lanch_y=(-z_array0[-1]/(z_array3[-2]-z_array3[-1]))*(y_array3[-2]-y_array3[-1])+y_array3[-1]
+    print(t)
+    print(lanch_x,lanch_y)
+    ```
