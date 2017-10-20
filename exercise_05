@@ -49,9 +49,8 @@ def baseball(velocity,angle):
         lanch_x1=(-array_y1[-1]/(array_y1[-2]-array_y1[-1]))*(array_x1[-2]-array_x1[-1])+array_x1[-1]
         pl.plot(array_x1,array_y1,'--',label=str(velocity)+'m/s')
         print(lanch_x1)
-ini_velocity=30
 for i in range(3):
-    ini_velocity=ini_velocity+10
+    ini_velocity=30+10*i
     baseball(ini_velocity,0)
 import numpy as np
 import pylab as pl
@@ -111,9 +110,8 @@ def baseball(velocity,angle):
         lanch_x1=(-array_y1[-1]/(array_y1[-2]-array_y1[-1]))*(array_x1[-2]-array_x1[-1])+array_x1[-1]
         pl.plot(array_x1,array_y1,'--',label=str(velocity)+'m/s'+ str(angle)+'°')
         print(lanch_x1)
-angle=0
 for i in range(3):
-    angle=angle+10
+    angle=10*1
     baseball(50,angle)
 import numpy as np
 import pylab as pl
