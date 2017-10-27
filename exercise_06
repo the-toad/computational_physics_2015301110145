@@ -1,0 +1,78 @@
+## 程序一
+```
+def trajectories(ini_angle,det_t):
+    import math
+    spin_velocity=0
+    array_spinvelocity=[0]
+    array_angle=[ini_angle]
+    angle=ini_angle
+    q=1/2
+    force_amplitude=1.5
+    force_omega=2/3
+    time=[0]
+    t=0
+    i=0
+    for i in range(1,1000): 
+        spin_velocity=spin_velocity+(-math.sin(angle)-q*spin_velocity + force_amplitude*math.sin(force_omega*t))*det_t
+        t=t+det_t
+        array_spinvelocity.append(spin_velocity)
+        angle=angle+spin_velocity*det_t
+        if angle > math.pi:
+            angle=angle-2*(math.pi)
+            array_angle.append(angle)
+        elif angle < -math.pi:
+            angle=angle+2*(math.pi)
+            array_angle.append(angle)
+        else:
+            array_angle.append(angle)
+        time.append(i*det_t)
+    import pylab as pl
+    pl.title('angle vs t')
+    pl.plot(array_angle,array_spinvelocity,label='ini_angle:'+str(ini_angle))
+    pl.xlabel('time(s)')
+    pl.ylabel('angle(radians)')
+    pl.legend()
+for j in range(1,4):
+    ini=j*0.2
+    trajectories(ini,0.04)
+    
+```
+## 程序二
+```
+def trajectories(ini_angle,det_t):
+    import math
+    spin_velocity=0
+    array_spinvelocity=[0]
+    array_angle=[ini_angle]
+    angle=ini_angle
+    q=1/2
+    force_amplitude=1.5
+    force_omega=2/3
+    time=[0]
+    t=0
+    i=0
+    for i in range(1,1000): 
+        spin_velocity=spin_velocity+(-math.sin(angle)-q*spin_velocity + force_amplitude*math.sin(force_omega*t))*det_t
+        t=t+det_t
+        array_spinvelocity.append(spin_velocity)
+        angle=angle+spin_velocity*det_t
+        if angle > math.pi:
+            angle=angle-2*(math.pi)
+            array_angle.append(angle)
+        elif angle < -math.pi:
+            angle=angle+2*(math.pi)
+            array_angle.append(angle)
+        else:
+            array_angle.append(angle)
+        time.append(i*det_t)
+    import pylab as pl
+    pl.title('angle vs t')
+    pl.plot(array_angle,array_spinvelocity,label='det_t'+str(det_t))
+    pl.xlabel('time(s)')
+    pl.ylabel('angle(radians)')
+    pl.legend()
+trajectories(0.2,0.01)
+trajectories(0.2,0.02)
+trajectories(0.2,0.04)
+trajectories(0.2,0.06)
+```
