@@ -7,3 +7,4 @@
 * [x] [exercise_05](http://note.youdao.com/groupshare/?token=DAAC7C447F3A428A82E6AAE0845C54F8&gid=57734359)
 * [x] [exercise_06](http://note.youdao.com/noteshare?id=c1b00bba79c2f6961786f70dfd40d8fb)
 * [x] [exercise_07](http://note.youdao.com/noteshare?id=d7f592b30e72a12f20781c11dbf8b5f1)
+* [ ] [exercise_08]()
