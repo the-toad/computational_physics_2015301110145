@@ -10,3 +10,4 @@
 * [x] [exercise_08](http://note.youdao.com/noteshare?id=ae82079f52c6aae307836faac81bb5fc)
 * [x] [mid_term](http://note.youdao.com/noteshare?id=5fb1688c15e1cfd5b1d0687239420de1)
 * [x] [exercise_09](http://note.youdao.com/noteshare?id=981d46125c604225b1c9b1b52c038bfe)
+* [x] [exercise_10]()
