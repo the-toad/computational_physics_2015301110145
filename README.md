@@ -11,3 +11,4 @@
 * [x] [mid_term](http://note.youdao.com/noteshare?id=5fb1688c15e1cfd5b1d0687239420de1)
 * [x] [exercise_09](http://note.youdao.com/noteshare?id=981d46125c604225b1c9b1b52c038bfe)
 * [x] [exercise_10](http://note.youdao.com/noteshare?id=0ea054cc4c992972c6d45993000b0248)
+* [ ] [明天考六级晚交一天]()
