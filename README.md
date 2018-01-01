@@ -12,4 +12,4 @@
 * [x] [exercise_09](http://note.youdao.com/noteshare?id=981d46125c604225b1c9b1b52c038bfe)
 * [x] [exercise_10](http://note.youdao.com/noteshare?id=0ea054cc4c992972c6d45993000b0248)
 * [ ] [明天考六级晚交一天]()
-* [ ] [final project]()
+* [x] [final project](https://github.com/the-toad/computational_physics_2015301110145/blob/master/fianal%20project/%E8%AE%A1%E7%AE%97%E7%89%A9%E7%90%86%E6%9C%9F%E6%9C%AB%E8%AE%BA%E6%96%87.pdf)
